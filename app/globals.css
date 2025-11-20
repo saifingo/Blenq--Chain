@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+/* Ciapher-Style.css */
+/* ------------------------------------------------------ */
+/* ROOT COLOR SYSTEM (Light + Dark + Other Colors)        */
+/* ------------------------------------------------------ */
+:root {
+  /* Primary Colors */
+  --primary: #000000;
+  --primary-light: #333333;
+  --primary-dark: #000000;
+  
+  /* Secondary Colors */
+  --secondary: #ffffff;
+  --secondary-light: #f5f5f5;
+  --secondary-dark: #cccccc;
+  
+  /* Accent Colors */
+  --accent-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+  --accent-green: #22c55e;
+  --accent-yellow: #eab308;
+  --accent-orange: #f97316;
+  --accent-red: #ef4444;
+  
+  /* TEXT Colors */
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #777777;
+  
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8f8;
+  --bg-soft: #f3f3f3;
+  
+  --font: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* DARK MODE */
+.dark {
+  --primary: #ffffff;
+  --primary-light: #dddddd;
+  --primary-dark: #ffffff;
+  
+  --secondary: #1a1a1a;
+  --secondary-light: #2a2a2a;
+  --secondary-dark: #000000;
+  
+  --accent-blue: #60a5fa;
+  --accent-purple: #a78bfa;
+  --accent-green: #4ade80;
+  --accent-yellow: #facc15;
+  --accent-orange: #fb923c;
+  --accent-red: #f87171;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #bbbbbb;
+  --text-muted: #888888;
+  
+  --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --bg-soft: #1a1a1a;
+}
+
+/* ------------------------------------------------------ */
+/* TYPOGRAPHY SYSTEM (MOBILE → TABLET → DESKTOP → DISPLAY) */
+/* ------------------------------------------------------ */
+
+/* Button Styles */ 
+button{
+  padding: '6px 15px',
+}
+
+#Pdd{
+   padding: "6px 15px",
+}
+/* MOBILE TYPOGRAPHY */
+:root {
+  /* Title */
+  --title-bold: 700 32px/38px var(--font);
+  --title-regular: 400 32px/38px var(--font);
+  
+  /* Section */
+  --section-bold: 700 24px/28px var(--font);
+  --section-regular: 400 24px/28px var(--font);
+  
+  /* Headline */
+  --headline-bold: 700 20px/24px var(--font);
+  --headline-regular: 400 20px/24px var(--font);
+  
+  /* Body */
+  --body-bold: 700 16px/20px var(--font);
+  --body-regular: 400 16px/20px var(--font);
+  
+  /* Notes */
+  --notes-bold: 700 14px/18px var(--font);
+  --notes-regular: 400 14px/18px var(--font);
+  
+  /* Caption */
+  --caption-bold: 700 12px/16px var(--font);
+  --caption-regular: 400 12px/16px var(--font);
+}
+
+/* TABLET TYPOGRAPHY */
+@media (min-width: 768px) {
+  :root {
+    --title-bold: 700 36px/40px var(--font);
+    --title-regular: 400 36px/40px var(--font);
+    
+    --section-bold: 700 28px/32px var(--font);
+    --section-regular: 400 28px/32px var(--font);
+    
+    --headline-bold: 700 22px/26px var(--font);
+    --headline-regular: 400 22px/26px var(--font);
+    
+    --body-bold: 700 18px/22px var(--font);
+    --body-regular: 400 18px/22px var(--font);
+    
+    --notes-bold: 700 16px/20px var(--font);
+    --notes-regular: 400 16px/20px var(--font);
+    
+    --caption-bold: 700 14px/18px var(--font);
+    --caption-regular: 400 14px/18px var(--font);
+  }
+}
+
+/* DESKTOP TYPOGRAPHY */
+@media (min-width: 1024px) {
+  :root {
+    --title-bold: 700 48px/52px var(--font);
+    --title-regular: 400 48px/52px var(--font);
+    
+    --section-bold: 700 36px/40px var(--font);
+    --section-regular: 400 36px/40px var(--font);
+    
+    --headline-bold: 700 28px/32px var(--font);
+    --headline-regular: 400 28px/32px var(--font);
+    
+    --body-bold: 700 20px/24px var(--font);
+    --body-regular: 400 20px/24px var(--font);
+    
+    --notes-bold: 700 18px/22px var(--font);
+    --notes-regular: 400 18px/22px var(--font);
+    
+    --caption-bold: 700 16px/20px var(--font);
+    --caption-regular: 400 16px/20px var(--font);
+  }
+}
+
+/* DISPLAY TYPOGRAPHY (Extra Large Screens) */
+@media (min-width: 1440px) {
+  :root {
+    --title-bold: 700 56px/60px var(--font);
+    --title-regular: 400 56px/60px var(--font);
+    
+    --section-bold: 700 40px/44px var(--font);
+    --section-regular: 400 40px/44px var(--font);
+    
+    --headline-bold: 700 32px/36px var(--font);
+    --headline-regular: 400 32px/36px var(--font);
+  }
+}
+
+/* ------------------------------------------------------ */
+/* UTILITY CLASSES                                        */
+/* ------------------------------------------------------ */
+
+.title-bold { font: var(--title-bold); }
+.title-regular { font: var(--title-regular); }
+
+.section-bold { font: var(--section-bold); }
+.section-regular { font: var(--section-regular); }
+
+.headline-bold { font: var(--headline-bold); }
+.headline-regular { font: var(--headline-regular); }
+
+.body-bold { font: var(--body-bold); }
+.body-regular { font: var(--body-regular); }
+
+.notes-bold { font: var(--notes-bold); }
+.notes-regular { font: var(--notes-regular); }
+
+.caption-bold { font: var(--caption-bold); }
+.caption-regular { font: var(--caption-regular); }
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Neon Glow Utilities */
+.neon-glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(59, 130, 246, 0.1);
+}
+
+.dark .neon-glow-blue {
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.4), 0 0 40px rgba(96, 165, 250, 0.2);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3), 0 0 40px rgba(139, 92, 246, 0.1);
+}
+
+.dark .neon-glow-purple {
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.4), 0 0 40px rgba(167, 139, 250, 0.2);
+}
+
+.neon-glow-green {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3), 0 0 40px rgba(34, 197, 94, 0.1);
+}
+
+.dark .neon-glow-green {
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.4), 0 0 40px rgba(74, 222, 128, 0.2);
+}
