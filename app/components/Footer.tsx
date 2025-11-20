@@ -20,7 +20,7 @@ export function Footer() {
     <footer
       className="py-16 px-6 border-t-2"
       style={{
-        padding:'20px',
+        padding:'40px 20px 20px',
          display: "flex",
         justifyContent: "center",
         backgroundColor: "var(--bg-secondary)",
