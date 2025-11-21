@@ -13,11 +13,15 @@ function Calendar({
   showOutsideDays = true,
   ...props
 }: React.ComponentProps<typeof DayPicker>) {
-  const components: Partial<CustomComponents> & { IconLeft?: any; IconRight?: any } = {
-    IconLeft: ({ className , ...props }) => (
+  // TypeScript-safe components
+  const components: Partial<CustomComponents> & {
+    IconLeft?: React.FC<React.SVGProps<SVGSVGElement>>;
+    IconRight?: React.FC<React.SVGProps<SVGSVGElement>>;
+  } = {
+    IconLeft: ({ className, ...props }) => (
       <ChevronLeft className={cn("size-4", className)} {...props} />
     ),
-    IconRight: ({ className , ...props }) => (
+    IconRight: ({ className, ...props }) => (
       <ChevronRight className={cn("size-4", className)} {...props} />
     ),
   };
